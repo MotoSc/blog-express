@@ -1,19 +1,19 @@
 #!/usr/bin/env node
-
+// #!/usr/bin/env node 表示是node可执行文件
 /**
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('blog:server');
-var http = require('http');
+var app = require('../app'); // 引入我们上面导出的app实例
+var debug = require('debug')('blog:server'); // 引入debug模块，打印调试日志
+var http = require('http');  //
 
 /**
  * Get port from environment and store in Express.
  */
 
 var port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+app.set('port', port);  // 设置端口号 3000
 
 /**
  * Create HTTP server.
